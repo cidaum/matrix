@@ -1,0 +1,87 @@
+[?1034h**********************************************************************
+File "./test_vec.py", line 53, in test_vec
+Failed example:
+    a + b == c
+Expected:
+    True
+Got:
+    False
+**********************************************************************
+File "./test_vec.py", line 58, in test_vec
+Failed example:
+    d + e == f
+Expected:
+    True
+Got:
+    False
+**********************************************************************
+File "./test_vec.py", line 60, in test_vec
+Failed example:
+    b + Vec({'a','e','i','o','u'}, {}) == b
+Expected:
+    True
+Got:
+    False
+**********************************************************************
+File "./test_vec.py", line 69, in test_vec
+Failed example:
+    u1*u2
+Expected:
+    5
+Got:
+    7
+**********************************************************************
+File "./test_vec.py", line 73, in test_vec
+Failed example:
+    v1*v2
+Expected:
+    -4
+Got:
+    12
+**********************************************************************
+File "./test_vec.py", line 77, in test_vec
+Failed example:
+    w1*w2
+Expected:
+    72
+Got:
+    186
+**********************************************************************
+File "./test_vec.py", line 88, in test_vec
+Failed example:
+    1*u == u
+Expected:
+    True
+Got:
+    False
+**********************************************************************
+File "./test_vec.py", line 90, in test_vec
+Failed example:
+    0.5*u == Vec({'x','y','z','w'},{'x':0.5,'y':1,'z':1.5,'w':2})
+Expected:
+    True
+Got:
+    False
+**********************************************************************
+File "./test_vec.py", line 100, in test_vec
+Failed example:
+    -v == Vec({0,1,2,3,4,'a'}, {0:-1,1:1,2:1,3:-1}) 
+Expected:
+    True
+Got:
+    False
+**********************************************************************
+File "./test_vec.py", line 102, in test_vec
+Failed example:
+    -(-v) == v
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/lib64/python3.3/doctest.py", line 1287, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test_vec[39]>", line 1, in <module>
+        -(-v) == v
+    TypeError: bad operand type for unary -: 'set'
+**********************************************************************
+1 items had failures:
+  10 of  41 in test_vec
+***Test Failed*** 10 failures.
